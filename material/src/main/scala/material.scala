@@ -134,7 +134,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-button", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -347,7 +347,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-checkbox", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -480,7 +480,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-circular-progress", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -579,7 +579,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-circular-progress-four-color", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -758,7 +758,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-dialog", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -973,7 +973,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-drawer", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -1116,7 +1116,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-fab", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -1247,7 +1247,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-formfield", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -1348,7 +1348,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-icon-button-toggle", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -1477,7 +1477,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-icon-button", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -1574,7 +1574,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-icon", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -1675,7 +1675,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-linear-progress", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -1796,7 +1796,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-radio", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -1927,7 +1927,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-slider", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -2084,7 +2084,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-snackbar", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -2217,7 +2217,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-switch", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -2286,7 +2286,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-tab-bar", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -2421,7 +2421,7 @@ package dev.laminar.material {
       @js.native
       @JSImport("@material/mwc-tab", JSImport.Default)
       object RawImport extends js.Object {}
-      private val _dummy = RawImport // needed because objects are lazy
+      RawImport // needed because objects are lazy
 
       type Ref         = dom.html.Element with RawElement
       type El          = ReactiveHtmlElement[Ref]
@@ -2648,7 +2648,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-list", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -2839,7 +2839,7 @@ package dev.laminar.material {
       @js.native
       @JSImport("@material/mwc-list", JSImport.Default)
       object RawImport extends js.Object {}
-      private val _dummy = RawImport // needed because objects are lazy
+      RawImport // needed because objects are lazy
 
       type Ref         = dom.html.Element with RawElement
       type El          = ReactiveHtmlElement[Ref]
@@ -3150,7 +3150,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-menu", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -3539,7 +3539,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-textfield", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -3978,7 +3978,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-textarea", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -4289,7 +4289,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-select", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -4578,7 +4578,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-top-app-bar-fixed", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]
@@ -4705,7 +4705,7 @@ package dev.laminar.material {
     @js.native
     @JSImport("@material/mwc-top-app-bar", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
 
     type Ref         = dom.html.Element with RawElement
     type El          = ReactiveHtmlElement[Ref]

@@ -163,7 +163,7 @@ class Builder(comp: WebComponent) {
     @js.native
     @JSImport("${comp.npmPackage.name}", JSImport.Default)
     object RawImport extends js.Object {}
-    private val _dummy = RawImport // needed because objects are lazy
+    RawImport // needed because objects are lazy
   """
 
   def buildTypes = s"""
