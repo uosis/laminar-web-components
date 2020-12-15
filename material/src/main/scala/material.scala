@@ -2753,7 +2753,7 @@ package dev.laminar.material {
       *
       * List item
       *
-      * {@literal @material/mwc-list@0.18.0}
+      * {@literal @material/mwc-list-item@0.18.0}
       *
       * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/list">Component Documentation</a>
       */
@@ -2837,7 +2837,7 @@ package dev.laminar.material {
       }
 
       @js.native
-      @JSImport("@material/mwc-list", JSImport.Default)
+      @JSImport("@material/mwc-list/mwc-list-item", JSImport.Default)
       object RawImport extends js.Object {}
       RawImport // needed because objects are lazy
 

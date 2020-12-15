@@ -1307,7 +1307,7 @@ val componentCollection = WebComponentCollection(
           tag = "mwc-list-item",
           description = "List item",
           link = "https://github.com/material-components/material-components-web-components/tree/master/packages/list",
-          npmPackage = NpmPackage(name = "@material/mwc-list", version = "0.18.0"),
+          npmPackage = NpmPackage(name = "@material/mwc-list-item", version = "0.18.0"), // FIXME: NPM package does not match import in this case: https://github.com/material-components/material-components-web-components/tree/master/packages/list
           slots = Slots(
             default = Some(
               DefaultSlot(description =
