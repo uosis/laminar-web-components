@@ -241,7 +241,7 @@ class Builder(comp: WebComponent) {
 
         $buildStyles
 
-        def apply(mods: ModFunction*): HtmlElement = {
+        def apply(mods: ModFunction*): El = {
             tag(mods.map(_($objectName)): _*)
         }
 
