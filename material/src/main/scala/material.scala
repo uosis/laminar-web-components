@@ -293,7 +293,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Button)): _*)
     }
 
@@ -420,7 +420,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Checkbox)): _*)
     }
 
@@ -519,7 +519,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(CircularProgress)): _*)
     }
 
@@ -650,7 +650,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(CircularProgressFourColor)): _*)
     }
 
@@ -931,7 +931,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Dialog)): _*)
     }
 
@@ -1056,7 +1056,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Drawer)): _*)
     }
 
@@ -1199,7 +1199,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Fab)): _*)
     }
 
@@ -1294,7 +1294,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Formfield)): _*)
     }
 
@@ -1435,7 +1435,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(IconButtonToggle)): _*)
     }
 
@@ -1552,7 +1552,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(IconButton)): _*)
     }
 
@@ -1609,7 +1609,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Icon)): _*)
     }
 
@@ -1742,7 +1742,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(LinearProgress)): _*)
     }
 
@@ -1861,7 +1861,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Radio)): _*)
     }
 
@@ -2012,7 +2012,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Slider)): _*)
     }
 
@@ -2181,7 +2181,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Snackbar)): _*)
     }
 
@@ -2250,7 +2250,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Switch)): _*)
     }
 
@@ -2321,7 +2321,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(TabBar)): _*)
     }
 
@@ -2532,7 +2532,7 @@ package dev.laminar.material {
 
       }
 
-      def apply(mods: ModFunction*): HtmlElement = {
+      def apply(mods: ModFunction*): El = {
         tag(mods.map(_(Tab)): _*)
       }
 
@@ -2745,7 +2745,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(List)): _*)
     }
 
@@ -2837,7 +2837,7 @@ package dev.laminar.material {
       }
 
       @js.native
-      @JSImport("@material/mwc-list", JSImport.Default)
+      @JSImport("@material/mwc-list/mwc-list-item", JSImport.Default)
       object RawImport extends js.Object {}
       RawImport // needed because objects are lazy
 
@@ -2974,7 +2974,7 @@ package dev.laminar.material {
 
       }
 
-      def apply(mods: ModFunction*): HtmlElement = {
+      def apply(mods: ModFunction*): El = {
         tag(mods.map(_(ListItem)): _*)
       }
 
@@ -3323,7 +3323,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Menu)): _*)
     }
 
@@ -3798,7 +3798,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Textfield)): _*)
     }
 
@@ -4139,7 +4139,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Textarea)): _*)
     }
 
@@ -4530,7 +4530,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(Select)): _*)
     }
 
@@ -4657,7 +4657,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(TopAppBarFixed)): _*)
     }
 
@@ -4776,7 +4776,7 @@ package dev.laminar.material {
 
     }
 
-    def apply(mods: ModFunction*): HtmlElement = {
+    def apply(mods: ModFunction*): El = {
       tag(mods.map(_(TopAppBar)): _*)
     }
 
