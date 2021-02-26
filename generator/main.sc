@@ -1,8 +1,8 @@
 import $file.material
 import $file.builder
 
-val organization = "dev.laminar"
-val version = "0.1-SNAPSHOT"
+val organization = "com.github.uosis"
+val version = "0.1.0"
 
 val outputProjectPath = os.pwd / "material"
 

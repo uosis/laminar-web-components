@@ -2,7 +2,7 @@
   *
   * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
   */
-package dev.laminar.material {
+package com.github.uosis.laminar.webcomponents.material {
 
   import com.raquo.domtypes.generic.codecs._
   import com.raquo.laminar.api.L._

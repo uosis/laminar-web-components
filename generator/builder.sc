@@ -12,7 +12,7 @@ class SBTProjectBuilder(
     organization: String,
     version: String,
 ) {
-    def name = s"laminar-components-${col.packageName}"
+    def name = s"laminar-webcomponents-${col.packageName}"
 
     def buildNpmDep(p: NpmPackage) = s"""npmDependencies in Compile += "${p.name}" -> "${p.version}""""
 
@@ -78,7 +78,7 @@ class CollectionBuilder(col: WebComponentCollection, organization: String) {
           *
           * $docLink
           */
-        package ${organization}.${col.packageName} {
+        package ${organization}.laminar.webcomponents.${col.packageName} {
 
             import com.raquo.domtypes.generic.codecs._
             import com.raquo.laminar.api.L._

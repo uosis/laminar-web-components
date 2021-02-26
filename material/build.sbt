@@ -3,13 +3,13 @@ enablePlugins(ScalaJSPlugin)
 
 enablePlugins(ScalaJSBundlerPlugin)
 
-name := "laminar-components-material"
+name := "laminar-webcomponents-material"
 
-version := "0.1-SNAPSHOT"
+version := "0.1.0"
 
-normalizedName := "laminar-components-material"
+normalizedName := "laminar-webcomponents-material"
 
-organization := "dev.laminar"
+organization := "com.github.uosis"
 
 scalaVersion := "2.13.3"
 
