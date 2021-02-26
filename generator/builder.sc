@@ -7,12 +7,15 @@ import $file.definition
 
 import definition._
 
+case class GitHubRepository(owner: String, repository: String)
+
 class SBTProjectBuilder(
     col: WebComponentCollection,
     organization: String,
     version: String,
+    publishTo: GitHubRepository
 ) {
-    def name = s"laminar-webcomponents-${col.packageName}"
+    def name = s"laminar-web-components-${col.packageName}"
 
     def buildNpmDep(p: NpmPackage) = s"""npmDependencies in Compile += "${p.name}" -> "${p.version}""""
 
@@ -32,6 +35,10 @@ version := "$version"
 normalizedName := "$name"
 
 organization := "$organization"
+
+githubOwner := "${publishTo.owner}"
+
+githubRepository := "${publishTo.repository}"
 
 scalaVersion := "2.13.3"
 
