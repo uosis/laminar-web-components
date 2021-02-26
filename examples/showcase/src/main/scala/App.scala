@@ -29,6 +29,15 @@ object App {
             _.label := "Text field",
           ),
         ),
+        p(
+          List(
+            _.activatable := true,
+            _.slots.default(
+              List.ListItem(_.slots.default(span("List Item 1"))),
+              List.ListItem(_.slots.default(span("List Item 2"))),
+            ),
+          ),
+        ),
       ),
     )
 
