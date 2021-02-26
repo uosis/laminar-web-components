@@ -1,5 +1,5 @@
 /** Code generator
-  * 
+  *
   * These classes turn component definitions into Scala code.
   */
 
@@ -55,7 +55,7 @@ def buildStylesObject(cssProperties: Seq[CSSProperty], docLink: String) = {
 
   def buildStyleReactiveField(p: CSSProperty) = s"""
         /** ${p.description}
-          * 
+          *
           * $docLink
           */
         val ${decapitalize(p.name.replaceAllLiterally("--", "").split("-").tail.map(_.capitalize).mkString)} = new ReactiveStyle(new Style("${p.name}", "${p.name}"))
@@ -120,7 +120,7 @@ class Builder(comp: WebComponent) {
 
   def buildMethodSignature(m: Method) = s"""
         /** ${m.description}
-          * 
+          *
           * $docLink
           */
         def ${m.name}(): Unit
@@ -128,7 +128,7 @@ class Builder(comp: WebComponent) {
 
   def buildPropertyGetter(p: Property) = s"""
         /** ${p.description}
-          * 
+          *
           * $docLink
           */
         def `${p.name}`: ${scalaType(p.tpe)}
@@ -136,7 +136,7 @@ class Builder(comp: WebComponent) {
 
   def buildPropertyReactiveField(p: Property) = s"""
         /** ${p.description}
-          * 
+          *
           * $docLink
           */
         val `${p.name}` = new ReactiveProp("${p.name}", ${propCodec(p.tpe)})
@@ -144,7 +144,7 @@ class Builder(comp: WebComponent) {
 
   def buildEventReactiveField(e: Event) = s"""
         /** ${e.description}
-          * 
+          *
           * $docLink
           */
         val on${e.name.split(':').last.split("-").map(_.capitalize).mkString} = new EventProp[dom.Event]("${e.name}")
@@ -191,7 +191,7 @@ class Builder(comp: WebComponent) {
     comp.slots.default match {
       case Some(DefaultSlot(description)) => s"""
         /** $description
-          * 
+          *
           * $docLink
           */
         def default(els: HtmlElement*): Seq[HtmlElement] = els.map(_.amend(slot := ""))
@@ -201,7 +201,7 @@ class Builder(comp: WebComponent) {
 
   def buildNamedSlot(s: NamedSlot) = s"""
     /** ${s.description}
-      * 
+      *
       * $docLink
       */
     def ${s.name}(els: HtmlElement*): Seq[HtmlElement] = els.map(_.amend(slot := "${s.name}"))
@@ -217,11 +217,11 @@ class Builder(comp: WebComponent) {
 
   def build: String = s"""
     /** ${comp.tag}
-      * 
+      *
       * ${comp.description}
-      * 
+      *
       * {@literal ${comp.npmPackage.name}@${comp.npmPackage.version}}
-      * 
+      *
       * $docLink
       */
     object $objectName {
@@ -241,7 +241,7 @@ class Builder(comp: WebComponent) {
 
         $buildStyles
 
-        def apply(mods: ModFunction*): HtmlElement = {
+        def apply(mods: ModFunction*): El = {
             tag(mods.map(_($objectName)): _*)
         }
 
