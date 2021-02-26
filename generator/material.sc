@@ -1327,7 +1327,7 @@ val componentCollection = WebComponentCollection(
           description = "List item",
           link = "https://github.com/material-components/material-components-web-components/tree/master/packages/list",
           npmPackage = NpmPackage(name = "@material/mwc-list", version = "0.18.0"),
-          jsImport = "@material/mwc-list",
+          jsImport = "@material/mwc-list/mwc-list-item",
           slots = Slots(
             default = Some(
               DefaultSlot(description =
