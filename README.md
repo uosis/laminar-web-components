@@ -6,9 +6,16 @@
 
 ## Usage
 
-### Add Ivy dependency
+### Add dependency
 
-`"dev.laminar" %%% "laminar-components-material" % "0.1-SNAPSHOT"`
+Package is published to GitHub Packages in this repository. To reference it, you can use
+[sbt-github-packages](https://github.com/djspiewak/sbt-github-packages) SBT plugin:
+
+```
+resolvers += Resolver.githubPackages("uosis")
+
+libraryDependencies += "com.github.uosis" %%% "laminar-web-components-material" % "0.1.0"
+```
 
 ### Ensure you have [sbt-scalajs-bundler](https://scalacenter.github.io/scalajs-bundler/) plugin
 
@@ -24,7 +31,7 @@ Web Components have similar interface to built-in elements. See examples below.
 
 Displays a collection of Web Components
 
-To run: 
+To run:
   - `cd examples/showcase`
   - `sbt fastOptJS::webpack`
   - Open `index-fastopt.html` in browser
