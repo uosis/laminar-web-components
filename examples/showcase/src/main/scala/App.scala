@@ -1,7 +1,7 @@
 import com.raquo.laminar.api.L._
 import org.scalajs.dom.document
 
-import dev.laminar.material._
+import com.github.uosis.laminar.webcomponents.material._
 
 object App {
 
