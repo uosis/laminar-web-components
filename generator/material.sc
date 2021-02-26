@@ -48,6 +48,7 @@ val componentCollection = WebComponentCollection(
       description = "Buttons allow users to take actions, and make choices, with a single tap.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/button",
       npmPackage = NpmPackage(name = "@material/mwc-button", version = "0.18.0"),
+      jsImport = "@material/mwc-button",
       slots = Slots(
         default = Some(
           DefaultSlot(description =
@@ -158,6 +159,7 @@ val componentCollection = WebComponentCollection(
         "Checkboxes allow the user to select one or more items from a set. Checkboxes can be used to turn an option on or off.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/checkbox",
       npmPackage = NpmPackage(name = "@material/mwc-checkbox", version = "0.18.0"),
+      jsImport = "@material/mwc-checkbox",
       properties = Seq(
         Property(
           name = "checked",
@@ -215,6 +217,7 @@ val componentCollection = WebComponentCollection(
       link =
         "https://github.com/material-components/material-components-web-components/tree/master/packages/circular-progress",
       npmPackage = NpmPackage(name = "@material/mwc-circular-progress", version = "0.18.0"),
+      jsImport = "@material/mwc-circular-progress",
       properties = Seq(
         Property(
           name = "indeterminate",
@@ -256,6 +259,7 @@ val componentCollection = WebComponentCollection(
       link =
         "https://github.com/material-components/material-components-web-components/tree/master/packages/circular-progress-four-color",
       npmPackage = NpmPackage(name = "@material/mwc-circular-progress-four-color", version = "0.18.0"),
+      jsImport = "@material/mwc-circular-progress-four-color",
       properties = Seq(
         Property(
           name = "indeterminate",
@@ -315,6 +319,7 @@ val componentCollection = WebComponentCollection(
         "Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/dialog",
       npmPackage = NpmPackage(name = "@material/mwc-dialog", version = "0.18.0"),
+      jsImport = "@material/mwc-dialog",
       slots = Slots(
         default = Some(DefaultSlot(description = "Content to display in the dialog's content area.")),
         named = Seq(
@@ -459,6 +464,7 @@ val componentCollection = WebComponentCollection(
         "The Navigation Drawer is used to organize access to destinations and other functionality on an app.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/drawer",
       npmPackage = NpmPackage(name = "@material/mwc-drawer", version = "0.18.0"),
+      jsImport = "@material/mwc-drawer",
       slots = Slots(
         default = Some(DefaultSlot(description = "Elements to display under the header in drawer.")),
         named = Seq(
@@ -514,6 +520,7 @@ val componentCollection = WebComponentCollection(
       description = "A floating action button (FAB) represents the primary action of a screen.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/fab",
       npmPackage = NpmPackage(name = "@material/mwc-fab", version = "0.18.0"),
+      jsImport = "@material/mwc-fab",
       slots = Slots(
         default = None,
         named = Seq(
@@ -584,6 +591,7 @@ val componentCollection = WebComponentCollection(
         "A form field is a text caption for MWC input elements including <mwc-checkbox>, <mwc-radio>, and <mwc-switch>. It is equivalent to the native <label> element in that it forwards user interaction events to the input element. For example, tapping on the label causes the associated input element to toggle and focus.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/formfield",
       npmPackage = NpmPackage(name = "@material/mwc-formfield", version = "0.18.0"),
+      jsImport = "@material/mwc-formfield",
       slots = Slots(
         default = Some(DefaultSlot(description = "The input element that this form field provides a label for.")),
         named = Seq(
@@ -620,6 +628,7 @@ val componentCollection = WebComponentCollection(
       link =
         "https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button-toggle",
       npmPackage = NpmPackage(name = "@material/mwc-icon-button-toggle", version = "0.18.0"),
+      jsImport = "@material/mwc-icon-button-toggle",
       slots = Slots(
         default = None,
         named = Seq(
@@ -688,6 +697,7 @@ val componentCollection = WebComponentCollection(
       link =
         "https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button",
       npmPackage = NpmPackage(name = "@material/mwc-icon-button", version = "0.18.0"),
+      jsImport = "@material/mwc-icon-button",
       slots = Slots(
         default = Some(DefaultSlot(description = "Optional <img> or <svg> to display instead of using an icon font")),
         named = Seq(
@@ -740,6 +750,7 @@ val componentCollection = WebComponentCollection(
         "Icon displays an icon with a chosen name from the [Material Icons](https://material.io/resources/icons/) font, or from any font that supports *ligatures*.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/icon",
       npmPackage = NpmPackage(name = "@material/mwc-icon", version = "0.18.0"),
+      jsImport = "@material/mwc-icon",
       slots = Slots(
         default = Some(
           DefaultSlot(description =
@@ -766,6 +777,7 @@ val componentCollection = WebComponentCollection(
       link =
         "https://github.com/material-components/material-components-web-components/tree/master/packages/linear-progress",
       npmPackage = NpmPackage(name = "@material/mwc-linear-progress", version = "0.18.0"),
+      jsImport = "@material/mwc-linear-progress",
       properties = Seq(
         Property(
           name = "indeterminate",
@@ -828,6 +840,7 @@ val componentCollection = WebComponentCollection(
         "Radio buttons allow the user to select one option from a set. Use radio buttons when the user needs to see all available options.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/radio",
       npmPackage = NpmPackage(name = "@material/mwc-radio", version = "0.18.0"),
+      jsImport = "@material/mwc-radio",
       properties = Seq(
         Property(
           name = "checked",
@@ -883,6 +896,7 @@ val componentCollection = WebComponentCollection(
       description = "Sliders allow users to make selections from a range of values.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/slider",
       npmPackage = NpmPackage(name = "@material/mwc-slider", version = "0.18.0"),
+      jsImport = "@material/mwc-slider",
       properties = Seq(
         Property(
           name = "value",
@@ -957,6 +971,7 @@ val componentCollection = WebComponentCollection(
       description = "Snackbars provide brief messages about app processes at the bottom of the screen.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/snackbar",
       npmPackage = NpmPackage(name = "@material/mwc-snackbar", version = "0.18.0"),
+      jsImport = "@material/mwc-snackbar",
       slots = Slots(
         default = None,
         named = Seq(
@@ -1047,6 +1062,7 @@ val componentCollection = WebComponentCollection(
         "Switches toggle the state of a single setting on or off. They are the preferred way to adjust settings on mobile.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/switch",
       npmPackage = NpmPackage(name = "@material/mwc-switch", version = "0.18.0"),
+      jsImport = "@material/mwc-switch",
       properties = Seq(
         Property(
           name = "checked",
@@ -1072,6 +1088,7 @@ val componentCollection = WebComponentCollection(
       description = "Tabs organize content across different screens, data sets, and other interactions.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/tab-bar",
       npmPackage = NpmPackage(name = "@material/mwc-tab-bar", version = "0.18.0"),
+      jsImport = "@material/mwc-tab-bar",
       slots = Slots(
         default = Some(DefaultSlot(description = "mwc-tab elements to display.")),
         named = Seq(
@@ -1102,6 +1119,7 @@ val componentCollection = WebComponentCollection(
           description = "Tabs organize content across different screens, data sets, and other interactions.",
           link = "https://github.com/material-components/material-components-web-components/tree/master/packages/tab",
           npmPackage = NpmPackage(name = "@material/mwc-tab", version = "0.18.0"),
+          jsImport = "@material/mwc-tab",
           slots = Slots(
             default = None,
             named = Seq(
@@ -1192,6 +1210,7 @@ val componentCollection = WebComponentCollection(
       description = "Lists are continuous, vertical indexes of text or images.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/tab-bar",
       npmPackage = NpmPackage(name = "@material/mwc-list", version = "0.18.0"),
+      jsImport = "@material/mwc-list",
       slots = Slots(
         default = Some(DefaultSlot(description = "Content to display in the lists internal <ul> element.")),
         named = Seq(
@@ -1308,6 +1327,7 @@ val componentCollection = WebComponentCollection(
           description = "List item",
           link = "https://github.com/material-components/material-components-web-components/tree/master/packages/list",
           npmPackage = NpmPackage(name = "@material/mwc-list", version = "0.18.0"),
+          jsImport = "@material/mwc-list",
           slots = Slots(
             default = Some(
               DefaultSlot(description =
@@ -1423,6 +1443,7 @@ val componentCollection = WebComponentCollection(
       description = "Menus display a list of choices on temporary surfaces.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/menu",
       npmPackage = NpmPackage(name = "@material/mwc-menu", version = "0.18.0"),
+      jsImport = "@material/mwc-menu",
       slots = Slots(
         default = Some(DefaultSlot(description = "Content to display in the menus internal <mwc-list> element.")),
         named = Seq(
@@ -1573,6 +1594,7 @@ val componentCollection = WebComponentCollection(
       description = "Text fields let users enter and edit text.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/textfield",
       npmPackage = NpmPackage(name = "@material/mwc-textfield", version = "0.18.0"),
+      jsImport = "@material/mwc-textfield",
       properties = Seq(
         Property(name = "value", tpe = WebComponentFieldType.String, description = "The input control's value."),
         Property(
@@ -1790,6 +1812,7 @@ val componentCollection = WebComponentCollection(
       description = "Text areas let users enter and edit text.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/textarea",
       npmPackage = NpmPackage(name = "@material/mwc-textarea", version = "0.18.0"),
+      jsImport = "@material/mwc-textarea",
       properties = Seq(
         Property(name = "rows", tpe = WebComponentFieldType.Number, description = "Sets number of visible text lines."),
         Property(
@@ -1939,6 +1962,7 @@ val componentCollection = WebComponentCollection(
       description = "Selects display a list of choices on temporary surfaces.",
       link = "https://github.com/material-components/material-components-web-components/tree/master/packages/select",
       npmPackage = NpmPackage(name = "@material/mwc-select", version = "0.18.0"),
+      jsImport = "@material/mwc-select",
       slots = Slots(
         default = Some(DefaultSlot(description = "Content to display in the selects internal <mwc-menu> element.")),
         named = Seq(
@@ -2125,6 +2149,7 @@ val componentCollection = WebComponentCollection(
       link =
         "https://github.com/material-components/material-components-web-components/tree/master/packages/top-app-bar-fixed",
       npmPackage = NpmPackage(name = "@material/mwc-top-app-bar-fixed", version = "0.18.0"),
+      jsImport = "@material/mwc-top-app-bar-fixed",
       slots = Slots(
         default = Some(
           DefaultSlot(description = "Scrollable content to display under the bar. This may be the entire application."),
@@ -2190,6 +2215,7 @@ val componentCollection = WebComponentCollection(
       link =
         "https://github.com/material-components/material-components-web-components/tree/master/packages/top-app-bar",
       npmPackage = NpmPackage(name = "@material/mwc-top-app-bar", version = "0.18.0"),
+      jsImport = "@material/mwc-top-app-bar",
       slots = Slots(
         default = Some(
           DefaultSlot(description = "Scrollable content to display under the bar. This may be the entire application."),

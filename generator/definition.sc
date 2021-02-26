@@ -1,5 +1,5 @@
 /** Web Component Data Model
-  * 
+  *
   * These case classes describe web components - their tags, properties, etc.
   */
 
@@ -16,6 +16,7 @@ case class WebComponent(
     description: String,
     link: String,
     npmPackage: NpmPackage,
+    jsImport: String,
     slots: Slots = Slots(None, Seq.empty),
     properties: Seq[Property] = Seq.empty,
     methods: Seq[Method] = Seq.empty,
