@@ -1,5 +1,5 @@
 /** Web Component definitions for Google's Material Web Components
-  */
+ */
 
 import $file.definition
 
@@ -1457,7 +1457,7 @@ val componentCollection = WebComponentCollection(
         ),
         Property(
           name = "anchor",
-          tpe = WebComponentFieldType.Any,
+          tpe = WebComponentFieldType.Element,
           description =
             "Determines from which element the floating menu should calculate sizing and position offsets. In the default case, both mwc-menu and the anchor should share a parent with position:relative. Changing anchor typically requires absolute or fixed.",
         ),

@@ -1,7 +1,7 @@
 /** Code generator
-  *
-  * These classes turn component definitions into Scala code.
-  */
+ *
+ * These classes turn component definitions into Scala code.
+ */
 
 import $file.definition
 
@@ -10,20 +10,20 @@ import definition._
 case class GitHubRepository(owner: String, repository: String)
 
 class SBTProjectBuilder(
-    col: WebComponentCollection,
-    organization: String,
-    version: String,
-    publishTo: GitHubRepository
-) {
-    def name = s"laminar-web-components-${col.packageName}"
+                         col: WebComponentCollection,
+                         organization: String,
+                         version: String,
+                         publishTo: GitHubRepository,
+                       ) {
+  def name = s"laminar-web-components-${col.packageName}"
 
-    def buildNpmDep(p: NpmPackage) = s"""npmDependencies in Compile += "${p.name}" -> "${p.version}""""
+  def buildNpmDep(p: NpmPackage) = s"""npmDependencies in Compile += "${p.name}" -> "${p.version}""""
 
-    def getNpmDeps(comp: WebComponent): Seq[NpmPackage] = Seq(comp.npmPackage) ++ comp.subComponents.flatMap(getNpmDeps)
+  def getNpmDeps(comp: WebComponent): Seq[NpmPackage] = Seq(comp.npmPackage) ++ comp.subComponents.flatMap(getNpmDeps)
 
-    def buildNPMDeps = col.components.flatMap(getNpmDeps).distinct.map(buildNpmDep).mkString("\n\n")
+  def buildNPMDeps = col.components.flatMap(getNpmDeps).distinct.map(buildNpmDep).mkString("\n\n")
 
-    def build = s"""
+  def build = s"""
 enablePlugins(ScalaJSPlugin)
 
 enablePlugins(ScalaJSBundlerPlugin)
@@ -98,6 +98,8 @@ class CollectionBuilder(col: WebComponentCollection, organization: String) {
             import scala.scalajs.js
             import scala.scalajs.js.annotation.JSImport
 
+            object ElementAsIsCodec extends AsIsCodec[HtmlElement]
+
             ${buildStylesObject(col.globalCssProperties, docLink)}
 
             ${col.components.map(c => new Builder(c).build).mkString("\n")}
@@ -115,6 +117,7 @@ class Builder(comp: WebComponent) {
       case WebComponentFieldType.Boolean => "Boolean"
       case WebComponentFieldType.Number  => "Double"
       case WebComponentFieldType.String  => "String"
+      case WebComponentFieldType.Element => "HtmlElement"
     }
 
   def propCodec(wctype: WebComponentFieldType) =
@@ -123,6 +126,7 @@ class Builder(comp: WebComponent) {
       case WebComponentFieldType.Boolean => "BooleanAsIsCodec"
       case WebComponentFieldType.Number  => "DoubleAsIsCodec"
       case WebComponentFieldType.String  => "StringAsIsCodec"
+      case WebComponentFieldType.Element => "ElementAsIsCodec"
     }
 
   def buildMethodSignature(m: Method) = s"""
