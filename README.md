@@ -36,6 +36,15 @@ To run:
   - `sbt fastOptJS::webpack`
   - Open `index-fastopt.html` in browser
 
+Please note that since the `components` package is not yet published you first need to do this:
+
+```
+cd material
+sbt publishLocal
+```
+
+Otherwise you might get an *Unresolved dependencies path* error.
+
 ## Generator
 
 [generator](https://github.com/uosis/laminar-web-components/tree/master/generator) folder contains Ammonite scripts used to generate component type definitions. If you want to tweak the generated types, changes should be made here.
