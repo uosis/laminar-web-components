@@ -44,7 +44,7 @@ scalaVersion := "2.13.3"
 
 crossScalaVersions := Seq("2.12.10", "2.13.3")
 
-libraryDependencies += "com.raquo" %%% "laminar" % "0.10.2"
+libraryDependencies += "com.raquo" %%% "laminar" % "0.12.2"
 
 scalaJSUseMainModuleInitializer := true
 
@@ -65,7 +65,7 @@ def buildStylesObject(cssProperties: Seq[CSSProperty], docLink: String) = {
           *
           * $docLink
           */
-        val ${decapitalize(p.name.replaceAllLiterally("--", "").split("-").tail.map(_.capitalize).mkString)} = new ReactiveStyle(new Style("${p.name}", "${p.name}"))
+        val ${decapitalize(p.name.replaceAllLiterally("--", "").split("-").tail.map(_.capitalize).mkString)} = new ReactiveStyle(new Style("${p.name}"))
   """
 
   s"""
