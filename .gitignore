@@ -4,3 +4,5 @@ metals.sbt
 .vscode
 .bloop
 target
+.idea
+.DS_Store
