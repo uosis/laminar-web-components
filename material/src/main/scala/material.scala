@@ -22,49 +22,49 @@ package com.github.uosis.laminar.webcomponents.material {
       *
       * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
       */
-    val themePrimary = new ReactiveStyle(new Style("--mdc-theme-primary", "--mdc-theme-primary"))
+    val themePrimary = new ReactiveStyle(new Style("--mdc-theme-primary"))
 
     /** The theme error color
       *
       * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
       */
-    val themeError = new ReactiveStyle(new Style("--mdc-theme-error", "--mdc-theme-error"))
+    val themeError = new ReactiveStyle(new Style("--mdc-theme-error"))
 
     /** The theme secondary color.
       *
       * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
       */
-    val themeSecondary = new ReactiveStyle(new Style("--mdc-theme-secondary", "--mdc-theme-secondary"))
+    val themeSecondary = new ReactiveStyle(new Style("--mdc-theme-secondary"))
 
     /** The theme surface color.
       *
       * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
       */
-    val themeSurface = new ReactiveStyle(new Style("--mdc-theme-surface", "--mdc-theme-surface"))
+    val themeSurface = new ReactiveStyle(new Style("--mdc-theme-surface"))
 
     /** The theme background color.
       *
       * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
       */
-    val themeBackground = new ReactiveStyle(new Style("--mdc-theme-background", "--mdc-theme-background"))
+    val themeBackground = new ReactiveStyle(new Style("--mdc-theme-background"))
 
     /** Text and icons on top of a theme primary color background.
       *
       * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
       */
-    val themeOnPrimary = new ReactiveStyle(new Style("--mdc-theme-on-primary", "--mdc-theme-on-primary"))
+    val themeOnPrimary = new ReactiveStyle(new Style("--mdc-theme-on-primary"))
 
     /** Text and icons on top of a theme secondary color background.
       *
       * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
       */
-    val themeOnSecondary = new ReactiveStyle(new Style("--mdc-theme-on-secondary", "--mdc-theme-on-secondary"))
+    val themeOnSecondary = new ReactiveStyle(new Style("--mdc-theme-on-secondary"))
 
     /** Text and icons on top of a theme surface color background.
       *
       * @see <a href="https://github.com/material-components/material-components-web-components">Component Collection Documentation</a>
       */
-    val themeOnSurface = new ReactiveStyle(new Style("--mdc-theme-on-surface", "--mdc-theme-on-surface"))
+    val themeOnSurface = new ReactiveStyle(new Style("--mdc-theme-on-surface"))
 
   }
 
@@ -219,77 +219,61 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonHorizontalPadding = new ReactiveStyle(
-        new Style("--mdc-button-horizontal-padding", "--mdc-button-horizontal-padding"),
-      )
+      val buttonHorizontalPadding = new ReactiveStyle(new Style("--mdc-button-horizontal-padding"))
 
       /** `width` of the outline of an outlined button and attempts to keep the component size constant.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonOutlineWidth = new ReactiveStyle(new Style("--mdc-button-outline-width", "--mdc-button-outline-width"))
+      val buttonOutlineWidth = new ReactiveStyle(new Style("--mdc-button-outline-width"))
 
       /** Color of the outline of an outlined element.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonOutlineColor = new ReactiveStyle(new Style("--mdc-button-outline-color", "--mdc-button-outline-color"))
+      val buttonOutlineColor = new ReactiveStyle(new Style("--mdc-button-outline-color"))
 
       /** Background fill color of a disabled raised or unelevated button.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonDisabledFillColor = new ReactiveStyle(
-        new Style("--mdc-button-disabled-fill-color", "--mdc-button-disabled-fill-color"),
-      )
+      val buttonDisabledFillColor = new ReactiveStyle(new Style("--mdc-button-disabled-fill-color"))
 
       /** Text color of a disabled button as well as the outline color of a disabled outlined button.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonDisabledInkColor = new ReactiveStyle(
-        new Style("--mdc-button-disabled-ink-color", "--mdc-button-disabled-ink-color"),
-      )
+      val buttonDisabledInkColor = new ReactiveStyle(new Style("--mdc-button-disabled-ink-color"))
 
       /** Sets the color of the outline of a disabled outlined button.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonDisabledOutlineColor = new ReactiveStyle(
-        new Style("--mdc-button-disabled-outline-color", "--mdc-button-disabled-outline-color"),
-      )
+      val buttonDisabledOutlineColor = new ReactiveStyle(new Style("--mdc-button-disabled-outline-color"))
 
       /** Sets the box shadow of the raised button.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonRaisedBoxShadow = new ReactiveStyle(
-        new Style("--mdc-button-raised-box-shadow", "--mdc-button-raised-box-shadow"),
-      )
+      val buttonRaisedBoxShadow = new ReactiveStyle(new Style("--mdc-button-raised-box-shadow"))
 
       /** Sets the box shadow of the raised button when focused or hovered.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonRaisedBoxShadowHover = new ReactiveStyle(
-        new Style("--mdc-button-raised-box-shadow-hover", "--mdc-button-raised-box-shadow-hover"),
-      )
+      val buttonRaisedBoxShadowHover = new ReactiveStyle(new Style("--mdc-button-raised-box-shadow-hover"))
 
       /** Sets the box shadow of the raised button when active.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonRaisedBoxShadowActive = new ReactiveStyle(
-        new Style("--mdc-button-raised-box-shadow-active", "--mdc-button-raised-box-shadow-active"),
-      )
+      val buttonRaisedBoxShadowActive = new ReactiveStyle(new Style("--mdc-button-raised-box-shadow-active"))
 
       /** Sets the box shadow of the raised button when disabled.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/button">Component Documentation</a>
         */
-      val buttonRaisedBoxShadowDisabled = new ReactiveStyle(
-        new Style("--mdc-button-raised-box-shadow-disabled", "--mdc-button-raised-box-shadow-disabled"),
-      )
+      val buttonRaisedBoxShadowDisabled = new ReactiveStyle(new Style("--mdc-button-raised-box-shadow-disabled"))
 
     }
 
@@ -400,23 +384,19 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/checkbox">Component Documentation</a>
         */
-      val checkboxInkColor = new ReactiveStyle(new Style("--mdc-checkbox-ink-color", "--mdc-checkbox-ink-color"))
+      val checkboxInkColor = new ReactiveStyle(new Style("--mdc-checkbox-ink-color"))
 
       /** Color of the unchecked box.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/checkbox">Component Documentation</a>
         */
-      val checkboxUncheckedColor = new ReactiveStyle(
-        new Style("--mdc-checkbox-unchecked-color", "--mdc-checkbox-unchecked-color"),
-      )
+      val checkboxUncheckedColor = new ReactiveStyle(new Style("--mdc-checkbox-unchecked-color"))
 
       /** Color of the checkbox box and fill when disabled.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/checkbox">Component Documentation</a>
         */
-      val checkboxDisabledColor = new ReactiveStyle(
-        new Style("--mdc-checkbox-disabled-color", "--mdc-checkbox-disabled-color"),
-      )
+      val checkboxDisabledColor = new ReactiveStyle(new Style("--mdc-checkbox-disabled-color"))
 
     }
 
@@ -620,33 +600,25 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/circular-progress-four-color">Component Documentation</a>
         */
-      val circularProgressBarColor1 = new ReactiveStyle(
-        new Style("--mdc-circular-progress-bar-color-1", "--mdc-circular-progress-bar-color-1"),
-      )
+      val circularProgressBarColor1 = new ReactiveStyle(new Style("--mdc-circular-progress-bar-color-1"))
 
       /** Sets the second of the four rotating colors.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/circular-progress-four-color">Component Documentation</a>
         */
-      val circularProgressBarColor2 = new ReactiveStyle(
-        new Style("--mdc-circular-progress-bar-color-2", "--mdc-circular-progress-bar-color-2"),
-      )
+      val circularProgressBarColor2 = new ReactiveStyle(new Style("--mdc-circular-progress-bar-color-2"))
 
       /** Sets the third of the four rotating colors.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/circular-progress-four-color">Component Documentation</a>
         */
-      val circularProgressBarColor3 = new ReactiveStyle(
-        new Style("--mdc-circular-progress-bar-color-3", "--mdc-circular-progress-bar-color-3"),
-      )
+      val circularProgressBarColor3 = new ReactiveStyle(new Style("--mdc-circular-progress-bar-color-3"))
 
       /** Sets the last of the four rotating colors.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/circular-progress-four-color">Component Documentation</a>
         */
-      val circularProgressBarColor4 = new ReactiveStyle(
-        new Style("--mdc-circular-progress-bar-color-4", "--mdc-circular-progress-bar-color-4"),
-      )
+      val circularProgressBarColor4 = new ReactiveStyle(new Style("--mdc-circular-progress-bar-color-4"))
 
     }
 
@@ -873,61 +845,55 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val shapeMedium = new ReactiveStyle(new Style("--mdc-shape-medium", "--mdc-shape-medium"))
+      val shapeMedium = new ReactiveStyle(new Style("--mdc-shape-medium"))
 
       /** Color of the scrim. (**Note:** setting alpha to 0 will still make scrim clickable but transparent).
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val dialogScrimColor = new ReactiveStyle(new Style("--mdc-dialog-scrim-color", "--mdc-dialog-scrim-color"))
+      val dialogScrimColor = new ReactiveStyle(new Style("--mdc-dialog-scrim-color"))
 
       /** Color of the heading text.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val dialogHeadingInkColor = new ReactiveStyle(
-        new Style("--mdc-dialog-heading-ink-color", "--mdc-dialog-heading-ink-color"),
-      )
+      val dialogHeadingInkColor = new ReactiveStyle(new Style("--mdc-dialog-heading-ink-color"))
 
       /** Color applied to the projected content. (**Note:** it may also be possible to style the content via the light DOM since it is not encapsulated in a shadow root).
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val dialogContentInkColor = new ReactiveStyle(
-        new Style("--mdc-dialog-content-ink-color", "--mdc-dialog-content-ink-color"),
-      )
+      val dialogContentInkColor = new ReactiveStyle(new Style("--mdc-dialog-content-ink-color"))
 
       /** Color of the dividers present when dialog is scrollable.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val dialogScrollDividerColor = new ReactiveStyle(
-        new Style("--mdc-dialog-scroll-divider-color", "--mdc-dialog-scroll-divider-color"),
-      )
+      val dialogScrollDividerColor = new ReactiveStyle(new Style("--mdc-dialog-scroll-divider-color"))
 
       /** min-width ofthe dialog surface.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val dialogMinWidth = new ReactiveStyle(new Style("--mdc-dialog-min-width", "--mdc-dialog-min-width"))
+      val dialogMinWidth = new ReactiveStyle(new Style("--mdc-dialog-min-width"))
 
       /** max-width of the dialog surface. (**Note:** if max-width is < `560px`, there is a visual jank bug that will occur causing the max width to be `560px` when the window is sized to <= than `560px`).
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val dialogMaxWidth = new ReactiveStyle(new Style("--mdc-dialog-max-width", "--mdc-dialog-max-width"))
+      val dialogMaxWidth = new ReactiveStyle(new Style("--mdc-dialog-max-width"))
 
       /** Max height of the dialog surface.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val dialogMaxHeight = new ReactiveStyle(new Style("--mdc-dialog-max-height", "--mdc-dialog-max-height"))
+      val dialogMaxHeight = new ReactiveStyle(new Style("--mdc-dialog-max-height"))
 
       /** Sets the box shadow of the dialog.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/dialog">Component Documentation</a>
         */
-      val dialogBoxShadow = new ReactiveStyle(new Style("--mdc-dialog-box-shadow", "--mdc-dialog-box-shadow"))
+      val dialogBoxShadow = new ReactiveStyle(new Style("--mdc-dialog-box-shadow"))
 
     }
 
@@ -1052,7 +1018,7 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/drawer">Component Documentation</a>
         */
-      val drawerWidth = new ReactiveStyle(new Style("--mdc-drawer-width", "--mdc-drawer-width"))
+      val drawerWidth = new ReactiveStyle(new Style("--mdc-drawer-width"))
 
     }
 
@@ -1177,25 +1143,25 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/fab">Component Documentation</a>
         */
-      val iconFont = new ReactiveStyle(new Style("--mdc-icon-font", "--mdc-icon-font"))
+      val iconFont = new ReactiveStyle(new Style("--mdc-icon-font"))
 
       /** Foreground color of the label and icon.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/fab">Component Documentation</a>
         */
-      val themeOnSecondary = new ReactiveStyle(new Style("--mdc-theme-on-secondary", "--mdc-theme-on-secondary"))
+      val themeOnSecondary = new ReactiveStyle(new Style("--mdc-theme-on-secondary"))
 
       /** Background color of the FAB.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/fab">Component Documentation</a>
         */
-      val themeSecondary = new ReactiveStyle(new Style("--mdc-theme-secondary", "--mdc-theme-secondary"))
+      val themeSecondary = new ReactiveStyle(new Style("--mdc-theme-secondary"))
 
       /** Sets the box shadow of the fab. Elevation 6 when idle, 8 when focused or hovered, and 12 when active.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/fab">Component Documentation</a>
         */
-      val fabBoxShadow = new ReactiveStyle(new Style("--mdc-fab-box-shadow", "--mdc-fab-box-shadow"))
+      val fabBoxShadow = new ReactiveStyle(new Style("--mdc-fab-box-shadow"))
 
     }
 
@@ -1415,23 +1381,19 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button-toggle">Component Documentation</a>
         */
-      val iconFont = new ReactiveStyle(new Style("--mdc-icon-font", "--mdc-icon-font"))
+      val iconFont = new ReactiveStyle(new Style("--mdc-icon-font"))
 
       /** Color of icon when `disabled` is `true`
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button-toggle">Component Documentation</a>
         */
-      val themeTextDisabledOnLight = new ReactiveStyle(
-        new Style("--mdc-theme-text-disabled-on-light", "--mdc-theme-text-disabled-on-light"),
-      )
+      val themeTextDisabledOnLight = new ReactiveStyle(new Style("--mdc-theme-text-disabled-on-light"))
 
       /** Opacity of the ripple on the icon button
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button-toggle">Component Documentation</a>
         */
-      val iconButtonRippleOpacity = new ReactiveStyle(
-        new Style("--mdc-icon-button-ripple-opacity", "--mdc-icon-button-ripple-opacity"),
-      )
+      val iconButtonRippleOpacity = new ReactiveStyle(new Style("--mdc-icon-button-ripple-opacity"))
 
     }
 
@@ -1520,35 +1482,31 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button">Component Documentation</a>
         */
-      val iconFont = new ReactiveStyle(new Style("--mdc-icon-font", "--mdc-icon-font"))
+      val iconFont = new ReactiveStyle(new Style("--mdc-icon-font"))
 
       /** Sets the size of the button wrapping the icon.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button">Component Documentation</a>
         */
-      val iconButtonSize = new ReactiveStyle(new Style("--mdc-icon-button-size", "--mdc-icon-button-size"))
+      val iconButtonSize = new ReactiveStyle(new Style("--mdc-icon-button-size"))
 
       /** Sets the size of the icon.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button">Component Documentation</a>
         */
-      val iconSize = new ReactiveStyle(new Style("--mdc-icon-size", "--mdc-icon-size"))
+      val iconSize = new ReactiveStyle(new Style("--mdc-icon-size"))
 
       /** Color of icon when `disabled` is `true`
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button">Component Documentation</a>
         */
-      val themeTextDisabledOnLight = new ReactiveStyle(
-        new Style("--mdc-theme-text-disabled-on-light", "--mdc-theme-text-disabled-on-light"),
-      )
+      val themeTextDisabledOnLight = new ReactiveStyle(new Style("--mdc-theme-text-disabled-on-light"))
 
       /** Opacity of the ripple on the icon button
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon-button">Component Documentation</a>
         */
-      val iconButtonRippleOpacity = new ReactiveStyle(
-        new Style("--mdc-icon-button-ripple-opacity", "--mdc-icon-button-ripple-opacity"),
-      )
+      val iconButtonRippleOpacity = new ReactiveStyle(new Style("--mdc-icon-button-ripple-opacity"))
 
     }
 
@@ -1599,13 +1557,13 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon">Component Documentation</a>
         */
-      val iconFont = new ReactiveStyle(new Style("--mdc-icon-font", "--mdc-icon-font"))
+      val iconFont = new ReactiveStyle(new Style("--mdc-icon-font"))
 
       /** Size of the icon.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/icon">Component Documentation</a>
         */
-      val iconSize = new ReactiveStyle(new Style("--mdc-icon-size", "--mdc-icon-size"))
+      val iconSize = new ReactiveStyle(new Style("--mdc-icon-size"))
 
     }
 
@@ -1722,23 +1680,19 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/linear-progress">Component Documentation</a>
         */
-      val themePrimary = new ReactiveStyle(new Style("--mdc-theme-primary", "--mdc-theme-primary"))
+      val themePrimary = new ReactiveStyle(new Style("--mdc-theme-primary"))
 
       /** Sets the color of the buffer progress bar.<br> **NOTE:** to change the color of the buffering dots, you must do so in the image of `--mdc-linear-progress-buffering-dots-image`.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/linear-progress">Component Documentation</a>
         */
-      val linearProgressBufferColor = new ReactiveStyle(
-        new Style("--mdc-linear-progress-buffer-color", "--mdc-linear-progress-buffer-color"),
-      )
+      val linearProgressBufferColor = new ReactiveStyle(new Style("--mdc-linear-progress-buffer-color"))
 
       /** Sets the image to use as the buffering dots. This pattern is then repeated horizontally and animated.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/linear-progress">Component Documentation</a>
         */
-      val linearProgressBufferingDotsImage = new ReactiveStyle(
-        new Style("--mdc-linear-progress-buffering-dots-image", "--mdc-linear-progress-buffering-dots-image"),
-      )
+      val linearProgressBufferingDotsImage = new ReactiveStyle(new Style("--mdc-linear-progress-buffering-dots-image"))
 
     }
 
@@ -1849,15 +1803,13 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/radio">Component Documentation</a>
         */
-      val radioUncheckedColor = new ReactiveStyle(
-        new Style("--mdc-radio-unchecked-color", "--mdc-radio-unchecked-color"),
-      )
+      val radioUncheckedColor = new ReactiveStyle(new Style("--mdc-radio-unchecked-color"))
 
       /** Color of the ring and circle of a disabled radio.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/radio">Component Documentation</a>
         */
-      val radioDisabledColor = new ReactiveStyle(new Style("--mdc-radio-disabled-color", "--mdc-radio-disabled-color"))
+      val radioDisabledColor = new ReactiveStyle(new Style("--mdc-radio-disabled-color"))
 
     }
 
@@ -1992,23 +1944,19 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/slider">Component Documentation</a>
         */
-      val themeSecondary = new ReactiveStyle(new Style("--mdc-theme-secondary", "--mdc-theme-secondary"))
+      val themeSecondary = new ReactiveStyle(new Style("--mdc-theme-secondary"))
 
       /** Sets the color of the text in the pin.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/slider">Component Documentation</a>
         */
-      val themeTextPrimaryOnDark = new ReactiveStyle(
-        new Style("--mdc-theme-text-primary-on-dark", "--mdc-theme-text-primary-on-dark"),
-      )
+      val themeTextPrimaryOnDark = new ReactiveStyle(new Style("--mdc-theme-text-primary-on-dark"))
 
       /** Sets the color of the circle around the knob on the disabled slider to make it seem cut-out. May be necessary when placing a disabled slider on a different-colored background.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/slider">Component Documentation</a>
         */
-      val sliderBgColorBehindComponent = new ReactiveStyle(
-        new Style("--mdc-slider-bg-color-behind-component", "--mdc-slider-bg-color-behind-component"),
-      )
+      val sliderBgColorBehindComponent = new ReactiveStyle(new Style("--mdc-slider-bg-color-behind-component"))
 
     }
 
@@ -2175,9 +2123,7 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/snackbar">Component Documentation</a>
         */
-      val snackbarActionColor = new ReactiveStyle(
-        new Style("--mdc-snackbar-action-color", "--mdc-snackbar-action-color"),
-      )
+      val snackbarActionColor = new ReactiveStyle(new Style("--mdc-snackbar-action-color"))
 
     }
 
@@ -2500,35 +2446,31 @@ package com.github.uosis.laminar.webcomponents.material {
           *
           * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/tab">Component Documentation</a>
           */
-        val tabHeight = new ReactiveStyle(new Style("--mdc-tab-height", "--mdc-tab-height"))
+        val tabHeight = new ReactiveStyle(new Style("--mdc-tab-height"))
 
         /** Horizontal padding on either side of the tab.
           *
           * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/tab">Component Documentation</a>
           */
-        val tabHorizontalPadding = new ReactiveStyle(
-          new Style("--mdc-tab-horizontal-padding", "--mdc-tab-horizontal-padding"),
-        )
+        val tabHorizontalPadding = new ReactiveStyle(new Style("--mdc-tab-horizontal-padding"))
 
         /** Height of the tab's stacked variant.
           *
           * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/tab">Component Documentation</a>
           */
-        val tabStackedHeight = new ReactiveStyle(new Style("--mdc-tab-stacked-height", "--mdc-tab-stacked-height"))
+        val tabStackedHeight = new ReactiveStyle(new Style("--mdc-tab-stacked-height"))
 
         /** Color of an unactivated tab label.
           *
           * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/tab">Component Documentation</a>
           */
-        val tabTextLabelColorDefault = new ReactiveStyle(
-          new Style("--mdc-tab-text-label-color-default", "--mdc-tab-text-label-color-default"),
-        )
+        val tabTextLabelColorDefault = new ReactiveStyle(new Style("--mdc-tab-text-label-color-default"))
 
         /** Color of an unactivated icon.
           *
           * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/tab">Component Documentation</a>
           */
-        val tabColorDefault = new ReactiveStyle(new Style("--mdc-tab-color-default", "--mdc-tab-color-default"))
+        val tabColorDefault = new ReactiveStyle(new Style("--mdc-tab-color-default"))
 
       }
 
@@ -2727,21 +2669,19 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/tab-bar">Component Documentation</a>
         */
-      val listVerticalPadding = new ReactiveStyle(
-        new Style("--mdc-list-vertical-padding", "--mdc-list-vertical-padding"),
-      )
+      val listVerticalPadding = new ReactiveStyle(new Style("--mdc-list-vertical-padding"))
 
       /** Adjusts the padding of the [padded] list dividers (also propagates to mwc-list-item).
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/tab-bar">Component Documentation</a>
         */
-      val listSidePadding = new ReactiveStyle(new Style("--mdc-list-side-padding", "--mdc-list-side-padding"))
+      val listSidePadding = new ReactiveStyle(new Style("--mdc-list-side-padding"))
 
       /** Adjusts the left inset padding of an [inset] list divider. Typically used for dividing list items with icons.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/tab-bar">Component Documentation</a>
         */
-      val listInsetMargin = new ReactiveStyle(new Style("--mdc-list-inset-margin", "--mdc-list-inset-margin"))
+      val listInsetMargin = new ReactiveStyle(new Style("--mdc-list-inset-margin"))
 
     }
 
@@ -2954,23 +2894,19 @@ package com.github.uosis.laminar.webcomponents.material {
           *
           * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/list">Component Documentation</a>
           */
-        val listItemMetaSize = new ReactiveStyle(new Style("--mdc-list-item-meta-size", "--mdc-list-item-meta-size"))
+        val listItemMetaSize = new ReactiveStyle(new Style("--mdc-list-item-meta-size"))
 
         /** Line height of the graphic and width & height of the slotted parent wrapper. 24px when graphic is "icon". 40px when graphic is "avatar". 56px when graphic is "medium", and "large".
           *
           * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/list">Component Documentation</a>
           */
-        val listItemGraphicSize = new ReactiveStyle(
-          new Style("--mdc-list-item-graphic-size", "--mdc-list-item-graphic-size"),
-        )
+        val listItemGraphicSize = new ReactiveStyle(new Style("--mdc-list-item-graphic-size"))
 
         /** Margin between the text and graphic. 16px when graphic is "avatar", "medium", "large", and "control". 32px when graphic is "icon".
           *
           * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/list">Component Documentation</a>
           */
-        val listItemGraphicMargin = new ReactiveStyle(
-          new Style("--mdc-list-item-graphic-margin", "--mdc-list-item-graphic-margin"),
-        )
+        val listItemGraphicMargin = new ReactiveStyle(new Style("--mdc-list-item-graphic-margin"))
 
       }
 
@@ -3283,43 +3219,43 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/menu">Component Documentation</a>
         */
-      val shapeMedium = new ReactiveStyle(new Style("--mdc-shape-medium", "--mdc-shape-medium"))
+      val shapeMedium = new ReactiveStyle(new Style("--mdc-shape-medium"))
 
       /** Height of single-line list-items in the menu.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/menu">Component Documentation</a>
         */
-      val menuItemHeight = new ReactiveStyle(new Style("--mdc-menu-item-height", "--mdc-menu-item-height"))
+      val menuItemHeight = new ReactiveStyle(new Style("--mdc-menu-item-height"))
 
       /** Menu min-width.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/menu">Component Documentation</a>
         */
-      val menuMinWidth = new ReactiveStyle(new Style("--mdc-menu-min-width", "--mdc-menu-min-width"))
+      val menuMinWidth = new ReactiveStyle(new Style("--mdc-menu-min-width"))
 
       /** Menu max-width.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/menu">Component Documentation</a>
         */
-      val menuMaxWidth = new ReactiveStyle(new Style("--mdc-menu-max-width", "--mdc-menu-max-width"))
+      val menuMaxWidth = new ReactiveStyle(new Style("--mdc-menu-max-width"))
 
       /** Menu max height.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/menu">Component Documentation</a>
         */
-      val menuMaxHeight = new ReactiveStyle(new Style("--mdc-menu-max-height", "--mdc-menu-max-height"))
+      val menuMaxHeight = new ReactiveStyle(new Style("--mdc-menu-max-height"))
 
       /** Z-index of the popup menu surface.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/menu">Component Documentation</a>
         */
-      val menuZIndex = new ReactiveStyle(new Style("--mdc-menu-z-index", "--mdc-menu-z-index"))
+      val menuZIndex = new ReactiveStyle(new Style("--mdc-menu-z-index"))
 
       /** Color of the menu surface.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/menu">Component Documentation</a>
         */
-      val themeSurface = new ReactiveStyle(new Style("--mdc-theme-surface", "--mdc-theme-surface"))
+      val themeSurface = new ReactiveStyle(new Style("--mdc-theme-surface"))
 
     }
 
@@ -3706,48 +3642,38 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldFilledBorderRadius = new ReactiveStyle(
-        new Style("--mdc-text-field-filled-border-radius", "--mdc-text-field-filled-border-radius"),
-      )
+      val textFieldFilledBorderRadius = new ReactiveStyle(new Style("--mdc-text-field-filled-border-radius"))
 
       /** Color of the filled textfield's bottom line when idle.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldIdleLineColor = new ReactiveStyle(
-        new Style("--mdc-text-field-idle-line-color", "--mdc-text-field-idle-line-color"),
-      )
+      val textFieldIdleLineColor = new ReactiveStyle(new Style("--mdc-text-field-idle-line-color"))
 
       /** Color of the filled textfield's bottom line when hovering.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldHoverLineColor = new ReactiveStyle(
-        new Style("--mdc-text-field-hover-line-color", "--mdc-text-field-hover-line-color"),
-      )
+      val textFieldHoverLineColor = new ReactiveStyle(new Style("--mdc-text-field-hover-line-color"))
 
       /** Color of the filled textfield's bottom line when disabled.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldDisabledLineColor = new ReactiveStyle(
-        new Style("--mdc-text-field-disabled-line-color", "--mdc-text-field-disabled-line-color"),
-      )
+      val textFieldDisabledLineColor = new ReactiveStyle(new Style("--mdc-text-field-disabled-line-color"))
 
       /** Color of the outlined textfield'soutline when idle.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldOutlinedIdleBorderColor = new ReactiveStyle(
-        new Style("--mdc-text-field-outlined-idle-border-color", "--mdc-text-field-outlined-idle-border-color"),
-      )
+      val textFieldOutlinedIdleBorderColor = new ReactiveStyle(new Style("--mdc-text-field-outlined-idle-border-color"))
 
       /** Color of the outlined textfield's outline when hovering.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
       val textFieldOutlinedHoverBorderColor = new ReactiveStyle(
-        new Style("--mdc-text-field-outlined-hover-border-color", "--mdc-text-field-outlined-hover-border-color"),
+        new Style("--mdc-text-field-outlined-hover-border-color"),
       )
 
       /** Color of the outlined textfield's outline when disabled.
@@ -3755,46 +3681,38 @@ package com.github.uosis.laminar.webcomponents.material {
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
       val textFieldOutlinedDisabledBorderColor = new ReactiveStyle(
-        new Style("--mdc-text-field-outlined-disabled-border-color", "--mdc-text-field-outlined-disabled-border-color"),
+        new Style("--mdc-text-field-outlined-disabled-border-color"),
       )
 
       /** Color of the textfield's background fill (non-outlined).
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldFillColor = new ReactiveStyle(
-        new Style("--mdc-text-field-fill-color", "--mdc-text-field-fill-color"),
-      )
+      val textFieldFillColor = new ReactiveStyle(new Style("--mdc-text-field-fill-color"))
 
       /** Color of the textfield's background fill (non-outlined) when disabled.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldDisabledFillColor = new ReactiveStyle(
-        new Style("--mdc-text-field-disabled-fill-color", "--mdc-text-field-disabled-fill-color"),
-      )
+      val textFieldDisabledFillColor = new ReactiveStyle(new Style("--mdc-text-field-disabled-fill-color"))
 
       /** Color of the input text.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldInkColor = new ReactiveStyle(new Style("--mdc-text-field-ink-color", "--mdc-text-field-ink-color"))
+      val textFieldInkColor = new ReactiveStyle(new Style("--mdc-text-field-ink-color"))
 
       /** Color of the non-focused floating label, helper text, char counter, and placeholder.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldLabelInkColor = new ReactiveStyle(
-        new Style("--mdc-text-field-label-ink-color", "--mdc-text-field-label-ink-color"),
-      )
+      val textFieldLabelInkColor = new ReactiveStyle(new Style("--mdc-text-field-label-ink-color"))
 
       /** Color of the input text, the floating label, helper text, char counter, and placeholder of a disabled textfield.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textfield">Component Documentation</a>
         */
-      val textFieldDisabledInkColor = new ReactiveStyle(
-        new Style("--mdc-text-field-disabled-ink-color", "--mdc-text-field-disabled-ink-color"),
-      )
+      val textFieldDisabledInkColor = new ReactiveStyle(new Style("--mdc-text-field-disabled-ink-color"))
 
     }
 
@@ -4109,32 +4027,26 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textarea">Component Documentation</a>
         */
-      val textAreaFilledBorderRadius = new ReactiveStyle(
-        new Style("--mdc-text-area-filled-border-radius", "--mdc-text-area-filled-border-radius"),
-      )
+      val textAreaFilledBorderRadius = new ReactiveStyle(new Style("--mdc-text-area-filled-border-radius"))
 
       /** Color of the outlined textarea's  outline when idle.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textarea">Component Documentation</a>
         */
-      val textAreaOutlinedIdleBorderColor = new ReactiveStyle(
-        new Style("--mdc-text-area-outlined-idle-border-color", "--mdc-text-area-outlined-idle-border-color"),
-      )
+      val textAreaOutlinedIdleBorderColor = new ReactiveStyle(new Style("--mdc-text-area-outlined-idle-border-color"))
 
       /** Color of the outlined textarea's outline when hovering.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textarea">Component Documentation</a>
         */
-      val textAreaOutlinedHoverBorderColor = new ReactiveStyle(
-        new Style("--mdc-text-area-outlined-hover-border-color", "--mdc-text-area-outlined-hover-border-color"),
-      )
+      val textAreaOutlinedHoverBorderColor = new ReactiveStyle(new Style("--mdc-text-area-outlined-hover-border-color"))
 
       /** Color of the outlined textarea's outline when disabled.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/textarea">Component Documentation</a>
         */
       val textAreaOutlinedDisabledBorderColor = new ReactiveStyle(
-        new Style("--mdc-text-area-outlined-disabled-border-color", "--mdc-text-area-outlined-disabled-border-color"),
+        new Style("--mdc-text-area-outlined-disabled-border-color"),
       )
 
     }
@@ -4410,123 +4322,99 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectErrorColor = new ReactiveStyle(new Style("--mdc-select-error-color", "--mdc-select-error-color"))
+      val selectErrorColor = new ReactiveStyle(new Style("--mdc-select-error-color"))
 
       /** Color of the filled select's bottom line when idle.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectIdleLineColor = new ReactiveStyle(
-        new Style("--mdc-select-idle-line-color", "--mdc-select-idle-line-color"),
-      )
+      val selectIdleLineColor = new ReactiveStyle(new Style("--mdc-select-idle-line-color"))
 
       /** Color of the filled select's bottom line when hovering.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectHoverLineColor = new ReactiveStyle(
-        new Style("--mdc-select-hover-line-color", "--mdc-select-hover-line-color"),
-      )
+      val selectHoverLineColor = new ReactiveStyle(new Style("--mdc-select-hover-line-color"))
 
       /** Color of the outlined select's outline when idle.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectOutlinedIdleBorderColor = new ReactiveStyle(
-        new Style("--mdc-select-outlined-idle-border-color", "--mdc-select-outlined-idle-border-color"),
-      )
+      val selectOutlinedIdleBorderColor = new ReactiveStyle(new Style("--mdc-select-outlined-idle-border-color"))
 
       /** Color of the outlined select's outline when hovering.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectOutlinedHoverBorderColor = new ReactiveStyle(
-        new Style("--mdc-select-outlined-hover-border-color", "--mdc-select-outlined-hover-border-color"),
-      )
+      val selectOutlinedHoverBorderColor = new ReactiveStyle(new Style("--mdc-select-outlined-hover-border-color"))
 
       /** Color of the outlined select's outline when disabled.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
       val selectOutlinedDisabledBorderColor = new ReactiveStyle(
-        new Style("--mdc-select-outlined-disabled-border-color", "--mdc-select-outlined-disabled-border-color"),
+        new Style("--mdc-select-outlined-disabled-border-color"),
       )
 
       /** Color of the select's background fill (non-outlined).
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectFillColor = new ReactiveStyle(new Style("--mdc-select-fill-color", "--mdc-select-fill-color"))
+      val selectFillColor = new ReactiveStyle(new Style("--mdc-select-fill-color"))
 
       /** Color of the select's background fill (non-outlined) when disabled.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectDisabledFillColor = new ReactiveStyle(
-        new Style("--mdc-select-disabled-fill-color", "--mdc-select-disabled-fill-color"),
-      )
+      val selectDisabledFillColor = new ReactiveStyle(new Style("--mdc-select-disabled-fill-color"))
 
       /** Color of the selected text in default and error states.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectInkColor = new ReactiveStyle(new Style("--mdc-select-ink-color", "--mdc-select-ink-color"))
+      val selectInkColor = new ReactiveStyle(new Style("--mdc-select-ink-color"))
 
       /** Color of the non-focused floating label, helper text, and placeholder.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectLabelInkColor = new ReactiveStyle(
-        new Style("--mdc-select-label-ink-color", "--mdc-select-label-ink-color"),
-      )
+      val selectLabelInkColor = new ReactiveStyle(new Style("--mdc-select-label-ink-color"))
 
       /** Color of the focused floating label, helper text, and placeholder.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectFocusedLabelColor = new ReactiveStyle(
-        new Style("--mdc-select-focused-label-color", "--mdc-select-focused-label-color"),
-      )
+      val selectFocusedLabelColor = new ReactiveStyle(new Style("--mdc-select-focused-label-color"))
 
       /** Color of the input text, the floating label, helper text, and placeholder of a disabled select.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectDisabledInkColor = new ReactiveStyle(
-        new Style("--mdc-select-disabled-ink-color", "--mdc-select-disabled-ink-color"),
-      )
+      val selectDisabledInkColor = new ReactiveStyle(new Style("--mdc-select-disabled-ink-color"))
 
       /** Color of the dropdown icon when select is not activated.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectDropdownIconColor = new ReactiveStyle(
-        new Style("--mdc-select-dropdown-icon-color", "--mdc-select-dropdown-icon-color"),
-      )
+      val selectDropdownIconColor = new ReactiveStyle(new Style("--mdc-select-dropdown-icon-color"))
 
       /** Color of the dropdown icon when select is activated.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectFocusedDropdownIconColor = new ReactiveStyle(
-        new Style("--mdc-select-focused-dropdown-icon-color", "--mdc-select-focused-dropdown-icon-color"),
-      )
+      val selectFocusedDropdownIconColor = new ReactiveStyle(new Style("--mdc-select-focused-dropdown-icon-color"))
 
       /** Opacity of the dropdown icon when disabled.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectDisabledDropdownIconColor = new ReactiveStyle(
-        new Style("--mdc-select-disabled-dropdown-icon-color ", "--mdc-select-disabled-dropdown-icon-color "),
-      )
+      val selectDisabledDropdownIconColor = new ReactiveStyle(new Style("--mdc-select-disabled-dropdown-icon-color "))
 
       /** Color of the dropdown icon when select is invalid.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/select">Component Documentation</a>
         */
-      val selectErrorDropdownIconColor = new ReactiveStyle(
-        new Style("--mdc-select-error-dropdown-icon-color", "--mdc-select-error-dropdown-icon-color"),
-      )
+      val selectErrorDropdownIconColor = new ReactiveStyle(new Style("--mdc-select-error-dropdown-icon-color"))
 
     }
 
@@ -4645,15 +4533,13 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/top-app-bar-fixed">Component Documentation</a>
         */
-      val topAppBarFixedBoxShadow = new ReactiveStyle(
-        new Style("--mdc-top-app-bar-fixed-box-shadow", "--mdc-top-app-bar-fixed-box-shadow"),
-      )
+      val topAppBarFixedBoxShadow = new ReactiveStyle(new Style("--mdc-top-app-bar-fixed-box-shadow"))
 
       /** Width of the `top-app-bar` in relation to the Window.
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/top-app-bar-fixed">Component Documentation</a>
         */
-      val topAppBarWidth = new ReactiveStyle(new Style("--mdc-top-app-bar-width", "--mdc-top-app-bar-width"))
+      val topAppBarWidth = new ReactiveStyle(new Style("--mdc-top-app-bar-width"))
 
     }
 
@@ -4772,7 +4658,7 @@ package com.github.uosis.laminar.webcomponents.material {
         *
         * @see <a href="https://github.com/material-components/material-components-web-components/tree/master/packages/top-app-bar">Component Documentation</a>
         */
-      val topAppBarWidth = new ReactiveStyle(new Style("--mdc-top-app-bar-width", "--mdc-top-app-bar-width"))
+      val topAppBarWidth = new ReactiveStyle(new Style("--mdc-top-app-bar-width"))
 
     }
 
